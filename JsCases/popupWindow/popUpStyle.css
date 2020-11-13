@@ -1,0 +1,51 @@
+.container{
+    position: absolute;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+}
+.modal{
+    display: none;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height:100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    -webkit-animation: moveto;
+    -webkit-animation-duration: 5s;
+    animation-name:moveto ;
+    animation-duration: 5s;
+}
+@-webkit-keyframes moveto {
+    from {top: -200px;opacity: 0;}
+    to {top: 0;opacity: 1}
+}
+@keyframes moveto {
+    from {top: -200px;opacity: 0;}
+    to {top: 0;opacity: 1}
+}
+
+.content {
+    background: white;
+    margin: auto;
+    padding: 20px 0;
+    border: 2px solid dodgerblue;
+    width: 80%;
+}
+.title {
+    background: white;
+    width: 80%;
+    margin: 20px auto;
+}
+.closeBtn{
+    color: rgba(125,125,125,0.75);
+    float: right;
+}
+.closeBtn:hover ,.closeBtn:focus{
+    color: black;
+    cursor: pointer;
+}
